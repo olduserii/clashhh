@@ -1,18 +1,16 @@
-proxies:
- - name: sueta
+- name: kkol
     server: slovomaratki.ru
-    port: 6969
-    type: vless
-    uuid: 934c0058-3f47-4e81-cb09-b35366a60af7
+    port: 20076
+    type: vmess
+    uuid: marat
+    alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
-    servername: slovomaratki.ru
-    network: tcp
+    skip-cert-verify: false
+    servername: 
+    network: ws
     ws-opts: 
-      path: null
+      path: /
       headers: 
         Host: .megafon.ru
     udp: true
-rules:
-- MATCH,sueta
