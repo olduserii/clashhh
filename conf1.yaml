@@ -1,0 +1,19 @@
+proxies:
+  - name: kkol
+    server: slovomaratki.ru
+    port: 20076
+    type: vmess
+    uuid: marat
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /
+      headers: 
+        Host: .megafon.ru
+    udp: true
+rules:
+- MATCH,kkol
